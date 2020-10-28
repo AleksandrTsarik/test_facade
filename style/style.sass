@@ -1,0 +1,49 @@
+@import __color
+@import __fonts
+@import __main__style
+@import __settings
+@import __input
+
+@import __header
+@import __main
+@import __footer
+
+@import __modal
+    
+html
+    font-size: calc( 100vw / 80 )
+    @media screen and ( max-width: 1440px )
+        font-size: 22px
+    @media screen and ( max-width: 1200px )
+        font-size: 20px
+    @media screen and ( max-width: 991px )
+        font-size: 18px
+    @media screen and ( max-width: 768px )
+        font-size: 16px
+    @media screen and ( max-width: 575px )
+        font-size: 14px
+    @media screen and ( max-width: 375px )
+        font-size: 12px
+
+body
+    margin: 0 auto
+    width: 100vw
+    min-height: 100vh
+    background: #ffffff
+    max-width: 100%
+    min-width: 300px
+    font-family: sans-serif
+    display: flex
+    flex-direction: column
+    position: relative
+.container
+    max-width: 51rem
+    margin: 0 auto
+    width: 100%
+    padding: 0 2rem
+    position: relative
+    @media screen and ( max-width: 768px )
+        margin: 0
+    @media screen and ( max-width: 575px )
+        padding: 0 15px
+

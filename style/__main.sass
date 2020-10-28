@@ -1,0 +1,298 @@
+.strip__ofer
+    background: $dark_blue
+    display: flex
+    padding: 0.9rem 0
+    position: relative
+    justify-content: center 
+    margin-bottom: 3.25rem
+    text-align: center
+    @media screen and ( max-width: 768px )
+        height: 10rem
+        flex-direction: column
+        justify-content: flex-end
+    @media screen and ( max-width: 375px )
+        height: 20rem
+    @media screen and ( max-width: 350px )
+        height: 22rem     
+    &__fence
+        @media screen and ( max-width: 375px )
+            height: 22rem
+    &::after
+        content: ''
+        border-bottom: dotted 0.12rem rgba(255, 255, 255, 0.2)
+        position: absolute
+        bottom: 0.21rem
+        width: 100%
+    &::before
+        content: ''
+        border-top: dotted 0.12rem rgba(255, 255, 255, 0.2)
+        position: absolute
+        top: 0.21rem
+        width: 100%
+    .text
+        font-size: 1.5rem
+        letter-spacing: -0.03em
+        color: $white
+        @media screen and ( max-width: 375px )
+            font-size: 2rem
+main
+    display: flex
+    flex-direction: column
+    flex: 1 1 auto
+    font-family: Cera Pro
+.related
+    background: #202533
+    &__title
+        color: $white
+        font-weight: 500
+        font-size: 2rem
+        line-height: 104%
+        text-align: center
+        letter-spacing: -0.03em
+        padding: 10.5rem 8rem 5rem 2.9rem
+        @media screen and ( max-width: 768px )
+            text-align: left
+            padding-left: 0
+            padding-right: 0
+        @media screen and ( max-width: 640px )
+            padding-top: 95px
+            padding-right: 3rem
+.related__block
+    display: flex
+    .related__block_inner
+        flex-wrap: wrap
+        margin: 0 -0.9rem
+        @media screen and ( max-width: 768px )
+            flex-wrap: nowrap
+            padding: 0 16px
+        .related__item
+            width: 33.333%
+            padding: 0 0.9rem 4rem 0.9rem
+            @media screen and ( max-width: 768px )
+                width: 250px
+                padding: 0 0.4rem 4rem 0.4rem
+            &__tile
+                width: 25%
+                @media screen and ( max-width: 768px )
+                    width: 220px
+                .item__img
+                    height: 220px
+            .related__item__title
+                color: $white
+                font-weight: normal
+                font-size: 1.16rem
+                line-height: 104%
+                letter-spacing: -0.03em
+                padding-top: 0.4rem
+                height: 50px
+                @media screen and ( max-width: 786px )
+                    font-size: 24px
+.feedback
+    background: $white
+    font-family: Cera Pro
+    .feedback__title
+        padding: 3.8rem 0
+        color: $black
+        font-weight: 500
+        font-size: 2rem
+        line-height: 104%
+        letter-spacing: -0.03em
+        @media screen and ( max-width: 768px )
+            padding-left: 15px
+    .feedback__block
+        display: flex
+        justify-content: space-between
+        .feedback__user
+            width: 20%
+            text-align: left
+            @media screen and ( max-width: 991px )
+                width: 210px
+                padding: 0 16px
+            .user__foto
+                width: 5.4rem
+                height: 5.4rem
+            .user__name
+                font-style: normal
+                font-weight: bold
+                font-size: 1rem
+                line-height: 120%
+                color: #262626
+                padding: 1.3rem 0 0.5rem 0
+                @media screen and ( max-width: 768px )
+                    font-size: 22px
+            .user__text
+                font-weight: normal
+                font-size: 0.75rem
+                line-height: 133%
+                color: #262626
+                @media screen and ( max-width: 768px )
+                    font-size: 16px
+.delivery 
+    font-family: Cera Pro
+    background-image: url('../img/fence_bg.png')
+    background-position: 50% 100%
+    background-repeat: no-repeat
+    background-size: cover  
+    @media screen and ( max-width: 375px )
+        background-image: none
+.gray__block
+    background-color: rgba(245, 245, 245, 0.8)
+    backdrop-filter: blur(6.25rem)
+    border-radius: 0.8rem
+    width: 96%
+    margin: 0 auto
+    transform: translateY(7rem)
+    position: relative
+    z-index: 5
+    @media screen and ( max-width: 375px )
+        background-image: url('../img/bg_gray_block.png')
+        background-position: 50% 100%
+        background-repeat: no-repeat
+        background-size: 100%
+        padding-bottom: 5rem
+    @media screen and ( max-width: 768px )
+        width: 100%
+    &__inner
+        padding: 2rem 5rem 0 2.8rem
+        @media screen and ( max-width: 768px )
+            padding: 1.2rem 1rem
+    .delivery__title
+        display: flex
+        align-items: center
+        &_pos
+            padding: 2.7rem 0 1.3rem 0
+        h3
+            color: 
+            font-size: 2rem
+            line-height: 104%
+            letter-spacing: -0.03em
+            color: $black
+            @media screen and ( max-width: 768px )
+                font-size: 2rem
+        .delivery__img
+            width: 2.6rem
+            height: 2.6rem
+            background: #ffffff
+            border-radius: 50%
+            display: flex
+            margin-right: 2rem
+            @media screen and ( max-width: 768px )
+                width: 4.6rem
+                height: 4.6rem
+            img
+                width: 2rem
+                height: 1.3rem
+                margin: auto
+                @media screen and ( max-width: 768px )
+                    width: 3.6rem
+                    height: 2.14rem
+    .delivery__item__block
+        .delivery__item
+            color: $black
+            font-size: 1rem
+            font-weight: 700
+            padding-top: 2rem
+            padding-bottom: 0.3rem
+            @media screen and ( max-width: 768px )
+                font-size: 20px
+            @media screen and ( max-width: 374px )
+                font-size: 1.4rem
+        .delivery__text
+            font-size: 0.8rem
+            font-weight: 500
+            padding-bottom: 0.5rem
+            @media screen and ( max-width: 768px )
+                font-size: 14px
+                padding-bottom: 12px
+            @media screen and ( max-width: 374px )
+                font-size: 1rem
+            &_fs
+                font-size: 0.9rem
+                font-weight: 700
+
+        .dekivery__attentively
+            opacity: 0.7
+            font-size: 0.56rem
+            padding-bottom: 0.3rem
+            @media screen and ( max-width: 768px )
+                font-size: 10px
+            @media screen and ( max-width: 374px )
+                font-size: 0.9rem
+
+.delivery__item__block_pos
+    padding-bottom: 4rem
+    @media screen and ( max-width: 375px )
+        margin-bottom: 11rem
+        padding-bottom: 0
+.advanteges
+    background-color: rgba(245, 245, 245, 0.8)
+    backdrop-filter: blur(6.25rem)
+    border-radius: 0.8rem   
+    padding: 3.4rem 3.12rem
+
+    background-image: url(../img/roof.png)
+    background-position: 100% 100%
+    background-repeat: no-repeat
+    @media screen and ( max-width: 768px )
+        background-image: none
+        padding: 32px 20px 20px 24px
+        transform: translateY(50px)
+    &__tile
+        transform: translateY(6.25rem)
+        margin-top: -2.9rem
+        @media screen and ( max-width: 640px )
+            transform: translateY(70px)
+            margin-top: -50px
+    &__title
+        font-style: normal
+        font-weight: 500
+        font-size: 2rem
+        line-height: 104%
+        letter-spacing: -0.03em
+        color: $black
+    &__bg_home
+        background-image: none
+        position: relative
+        z-index: 15
+        margin-top: 1.5rem
+        @media screen and ( max-width: 375px )
+            background-image: url(../img/home_small.png)
+            background-position: 50% 100%
+            background-repeat: no-repeat
+            background-size: 100%
+
+            padding-bottom: 20rem
+
+.bg__home
+    background-image: url(../img/home.png)
+    background-position: 100% 100%
+    background-repeat: no-repeat
+    background-size: 50%
+
+    @media screen and ( max-width: 375px )
+        background-image: none
+
+.advanteges__text
+    padding-top: 2.3rem
+    .advanteges__string
+        position: relative
+        padding-left: 1.46rem
+        font-weight: normal
+        font-size: 1.25rem
+        line-height: 1.6rem
+        letter-spacing: -0.01em
+        color: $black
+        margin-bottom: 1.8rem
+        @media screen and ( max-width: 375px )
+            padding-left: 15px
+            font-weight: 300
+        &::before
+            content: ''
+            width: 0.6rem
+            height: 0.6rem
+            border-radius: 50%
+            background: #FEB63D
+            position: absolute
+            left: 0
+            margin-top: 0.6rem
+                

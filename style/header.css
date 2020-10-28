@@ -1,0 +1,22 @@
+.header {
+  background-image: url("../img/bg_header.jpg");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .top-strip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__menu .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=header.css.map */

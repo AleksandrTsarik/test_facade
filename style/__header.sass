@@ -1,0 +1,108 @@
+.header
+    &__fence
+        background-image: url('../img/bg_header.jpg')
+        background-position: 50% 0%
+        background-repeat: no-repeat
+        background-size: cover  
+        font-family: Cera Pro
+        @media screen and ( max-width: 768px )
+            background-image: url('../img/bg_header_mobile.jpg')
+            background-position: 100% 50%
+            background-repeat: no-repeat
+            background-size: cover  
+        &__inner
+            display: flex
+            flex-direction: column
+    &__tile
+        background-image: url('../img/tile_bg_header.jpg')
+        background-position: 50% 0%
+        background-repeat: no-repeat
+        background-size: cover  
+        font-family: Cera Pro
+.top-strip
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 1.6rem
+    @media screen and ( max-width: 640px )
+        flex-direction: column
+        align-items: flex-start
+    @media screen and ( max-width: 375px )
+        margin-bottom: 1rem
+    &__inner
+        display: flex
+        align-items: center
+    .name__company
+        font-size: 1rem
+        background: #1640A9
+        line-height: 98%
+        padding: 2rem 0.6rem 0.5rem 0.6rem
+        border-radius: 0 0  0.2rem 0.2rem
+        position: relative
+        margin-right: 0.75rem
+        @media screen and ( max-width: 640px )
+            padding: 1.2rem 1.7rem
+            border-radius: 0.4rem
+            margin-top: 2rem
+.header__list
+    display: flex
+    font-size: 0.75rem
+    letter-spacing: -0.01em
+    padding-top: 1.5rem
+    @media screen and ( max-width: 768px )
+        display: none
+    .list__item
+        white-space: nowrap
+        margin: 0 0.6rem
+        a
+            display: inline-flex
+            position: relative
+            text-decoration: none
+            color: $black
+            &::before
+                content: ""
+                display: flex
+                position: absolute
+                height: 0.02rem
+                width: 0
+                background: $black
+                transition: width 0.4s ease-in-out, left 0.4s ease-in-out
+                left: 50%
+                bottom: -0.01rem
+            &::after
+                content: ""
+                display: flex
+                position: absolute
+                height: 0.02rem
+                width: 0
+                background-color: $black
+                transition: width 0.4s ease-in-out
+                left: 50%
+                bottom: 0
+            &:hover::before
+                width: 100%
+                left: 0
+                bottom: -0.01rem
+                &:hover::after
+                    width: 50%
+                    
+.phone__number
+    font-size: 1.33rem
+    @media screen and ( max-width: 640px )
+        font-size: 32px
+    font-weight: 500
+    &_dark
+        color: $blue
+    &_light
+        color: $white
+    &_smal
+        font-size: 0.8rem
+        padding-right: 0.4rem
+        opacity: 0.6
+        @media screen and ( max-width: 640px )
+            font-size: 20px
+.header__phone__number
+    padding-top: 1rem
+    @media screen and ( max-width: 375px )
+        padding-top: 0.8rem

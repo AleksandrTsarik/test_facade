@@ -1,0 +1,28 @@
+// inputMask
+let inputs = document.querySelectorAll('.js-input-tel');
+let im = new Inputmask('+7 (999) 999-99-99');
+im.mask(inputs);
+
+// validate
+function validateForms(selector, rules) {
+    new window.JustValidate(selector, {
+        rules: rules,
+        submitHandler: function (form, values, ajax) {
+            console.log(form);
+
+            let formData = new FormData(form);
+
+            fetch("mail.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(function(data) {
+                console.log(data);
+                console.log('Отправлено');
+                form.reset();
+            });
+        }
+    });
+}
+
+validateForms('.form', { tel: { required: true } });

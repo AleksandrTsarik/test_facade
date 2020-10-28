@@ -1,0 +1,489 @@
+.deal__price_text_open
+    display: none
+    font-size: 14px
+    line-height: 18px
+    align-items: center
+    text-align: center
+    letter-spacing: -0.01em
+    @media screen and ( max-width: 768px )
+        display: flex
+.deal__price_text_close
+    @media screen and ( max-width: 768px )
+        display: none
+.text_close
+    @media screen and ( max-width: 768px )
+        display: none
+
+.bg_orange
+    background: $orange
+    color: $white
+    margin-top: 0.87rem
+    @media screen and ( max-width: 375px )
+        margin-top: 0.75rem
+.bg_blue
+    background: $dark-blue
+    color: $white
+    margin-top: 0.54rem
+.title__promotion
+    width: 23.6rem
+    font-size: 2rem
+    color: $black
+    letter-spacing: -0.03em
+    line-height: 104%
+    font-weight: 500
+    font-family: Cera Pro
+    position: relative
+    @media screen and ( max-width: 768px )
+        width: auto
+        padding-right: 3rem
+    @media screen and ( max-width: 374px )
+        font-weight: 300
+        padding-right: 7rem
+    @media screen and ( max-width: 320px )
+        padding-right: 0
+    &_bold
+        font-weight: bold
+        @media screen and ( max-width: 375px )
+            padding-right: 5.5rem
+
+.promotion
+    &__fence
+        transform: translate(0, 50%)
+        margin-top: 4.3rem
+        @media screen and ( max-width: 768px )
+            margin-top: -4.5rem
+        @media screen and ( max-width: 450px )
+            transform: translate(0, 10%)
+            margin-top: 2.5rem
+    &__tile
+        margin: 1rem 0
+        @media screen and ( max-width: 640px )
+            margin-bottom: -30px
+.prom__phone
+    position: relative
+    z-index: 5
+    margin: auto 0
+    width: 10.1rem
+    @media screen and ( max-width: 768px )
+        width: 70%
+        margin: 3rem 0 auto
+    @media screen and ( max-width: 500px )
+        width: 100%
+ 
+.block__phone
+    width: 12.9rem
+    height: 9.1rem
+    padding: 1rem
+    border-radius: 0.4rem
+    color: $white
+    font-size: 1rem
+    line-height: 104%
+    letter-spacing: -0.03em
+    font-weight: bold
+    @media screen and ( max-width: 640px )
+        height: 220px
+        width: 295px
+        padding: 24px
+        font-size: 24px
+    &__bg_blue
+        background: $light_blue
+        backdrop-filter: blur(2.1rem)
+        @media screen and ( max-width: 768px )
+            background: rgba(145, 145, 145, 0.8)
+    &__header_pos
+        margin: 0.75rem 0 2.25rem auto
+        @media screen and ( max-width: 768px )
+            margin: auto
+            transform: translate(0, 67px)
+        
+        @media screen and ( max-width: 375px )
+            transform: translate(0, 70%)
+    &__bg_gray
+        background: rgba(145, 145, 145, 0.8)
+        backdrop-filter: blur(2.1rem) 
+    &__title
+        padding-bottom: 1.1rem
+        .block__phone__title_figure
+            padding-top: 0.2rem
+    .input__phone__btn
+        border-radius: 0.4rem
+        transform: translate(0, 50%)
+
+.block__item
+    font-family: Cera Pro
+    &__title
+        display: none
+        font-weight: normal
+        font-size: 32px
+        line-height: 104%
+        letter-spacing: -0.03em
+        padding-right: 50%
+        padding-bottom: 24px
+        color: &black
+        @media screen and ( max-width: 768px )
+            display: flex
+    &_pos
+        margin-bottom: 3.3rem
+        @media screen and ( max-width: 768px )
+            margin-bottom: 60px
+    &_pos-fence
+        margin-bottom: -4rem
+        @media screen and ( max-width: 768px )
+            margin-bottom: 0
+    .item__head
+        display: flex
+        padding-bottom: 1.12rem
+        align-items: center
+        @media screen and ( max-width: 768px )
+            flex-direction: column
+            align-items: flex-start
+        .item__head__title
+            font-size: 1.6rem
+            letter-spacing: -0.03em
+            line-height: 104%
+            color: $black
+            padding-right: 0.8rem
+            @media screen and ( max-width: 768px )
+                padding-bottom: 0.5rem  
+                padding-right: 6rem 
+
+.item__body__scroll
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -0.4rem
+    justify-content: space-between
+    @media screen and ( max-width: 991px )
+        overflow-x: scroll
+        -ms-overflow-style: none
+        overflow: -moz-scrollbars-none
+        &::-webkit-scrollbar
+            height: 0
+            width: 0
+
+.item__body
+    display: flex
+    width: 100%
+    align-items: center
+    @media screen and ( max-width: 768px )
+        width: auto
+    .item
+        overflow: hidden
+        padding: 0 0.4rem
+        width: 33.333%
+        border-radius: 0.4rem
+        position: relative
+        z-index: 1
+        @media screen and ( max-width: 768px )
+            width: 315px
+        &__tile
+            width: 25%
+            @media screen and ( max-width: 768px )
+                width: 250px
+            .item__img
+        .item__img
+            border-radius: 0.4rem
+            overflow: hidden
+            background: #C4C4C4
+            height: 9.3rem
+            @media screen and ( max-width: 768px )
+                height: 225px
+        .item__title
+            font-size: 1.2rem
+            line-height: 104%
+            letter-spacing: -0.03em
+            font-weight: normal
+            color: $black
+            padding-bottom: 0.8rem
+
+.item__footer
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+    @media screen and ( max-width: 768px )
+        flex-direction: column
+        flex-wrap: wrap
+        align-items: flex-start
+    &__tile
+        justify-content: center
+        @media screen and ( max-width: 768px )
+            justify-content: flex-start
+    .item__footer__text
+        font-size: 1.1rem
+        line-height: 104%
+        letter-spacing: -0.03em
+        margin-right: 0.9rem
+
+        @media screen and ( max-width: 768px )
+            font-size: 26px
+            margin-bottom: 13px
+    .item__footer__price
+        background: $orange
+        color: $white
+        border-radius: 0.4rem
+        font-weight: bold
+        
+        font-size: 1.1rem
+        line-height: 1.4rem
+        padding: 0.37rem 0.83rem
+        
+        padding: 0.4rem 1rem
+        margin-right: 0.6rem
+        @media screen and ( max-width: 768px )
+            padding: 15px 24px
+            font-size: 26px
+            margin-right: 12px
+    .item__footer__price_old
+        background: #E9E9E9
+        color: #C8C8C8
+        border-radius: 0.32rem
+        opacity: 0.6
+        font-size: 0.8rem
+        line-height: 1.1rem
+        padding: 0.4rem 0.6rem
+        position: relative
+        @media screen and ( max-width: 768px )
+            padding: 13px 15px
+            font-size: 20px
+        &::before
+            content: ''
+            position: absolute
+            width: 90%
+            height: 0.01rem
+            top: 0.8rem
+            left: 0.3rem
+            border: 0.07rem solid #D5D5D5
+            transform: matrix(0.98, -0.24, 0.21, 0.97, 0, 3)
+            @media screen and ( max-width: 768px )
+                transform: matrix(0.98, -0.24, 0.21, 0.97, 0, 9)
+    .item__footer__amount
+        display: flex
+        align-items: center
+        @media screen and ( max-width: 374px )
+            flex-direction: column
+            align-items: flex-start
+        div
+            @media screen and ( max-width: 374px )
+                margin: 0.5rem 0
+
+.guarantee
+    display: flex
+    align-items: cenetr
+    padding-top: 0.4rem
+    padding: 0.4rem 0 1.3rem 0
+    img
+        width: 26px
+        height: 19px
+    .guarantee__text
+        font-size: 16px
+        color: #262626
+        opacity: 0.6
+        line-height: 110%
+        padding-left: 0.5rem
+.item__choice
+    display: flex
+    position: relative
+    z-index: 1
+    &_position
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-top: 0.5rem
+    
+        .btn_fs_small
+            margin: 0.25rem 0
+
+.item__choice_location
+    @media screen and ( max-width: 768px )
+        transform: translateY(-3.3rem)
+
+.item__tile
+    .item__choice
+        margin-top: 0
+        @media screen and ( max-width: 768px )
+            transform: translateY(-50%)
+
+.block__item_pos-fence
+    .item__footer_close
+        display: none
+        @media screen and ( max-width: 768px )
+            display: flex
+            margin-top: 0.71rem
+
+.name__company
+    color: #FFD029
+    background: $dark_blue
+    display: inline-flex
+    border-radius: 0.4rem
+    line-height: 98%
+    align-items: center
+    text-align: center
+    letter-spacing: -0.005em
+    font-size: 1.9rem
+.name__company_pos
+    transform: translateY(50%)
+
+.color__orange
+    color: $orange
+    font-weight: normal
+    font-size: 1.6rem
+    line-height: 104%
+
+.application__box
+    .block__phone__bg_gray
+        margin: 0
+        transform: translate(0, 0)
+    .promotion
+        transform: translate(0 ,0)
+        margin: 2rem 0
+
+.prom__box
+    display: flex
+    width: 100%
+    position: relative
+    .prom__inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background: rgb(230, 230 ,230 )
+        border-radius: 0.4rem
+        width: 100%
+        @media screen and ( max-width: 768px )
+            flex-direction: column
+            align-items: flex-start
+            padding: 1.1rem
+            border-radius
+        &__phone
+            padding: 0 3.6rem 0 2rem
+            @media screen and ( max-width: 768px )
+                padding: 1rem
+        &__callback
+            padding: 0 0 0 2rem
+            @media screen and ( max-width: 768px )
+                padding: 1rem
+        .prom__text
+            font-size: 2rem
+            transform: translateY(-1.8rem)
+            width: 65%
+            line-height: 104%
+            @media screen and ( max-width: 768px )
+                width: 100%
+                transform: translateY(-2.5rem)
+                margin-bottom: -2rem
+            @media screen and ( max-width: 450px )
+                transform: translateY(0)
+                margin-bottom: 0
+        
+    .deal__price
+        position: absolute
+        bottom: -1.7rem
+        @media screen and ( max-width: 768px )
+            right: 1rem
+            bottom: 1rem
+            left: auto
+        @media screen and ( max-width: 450px )
+            position: relative
+            bottom: 0
+            margin-bottom: 42px
+            left: 0
+            margin-left: 0
+        &__fence
+            left: 2rem
+            @media screen and ( max-width: 768px )
+                left: auto
+        &__tile
+            left: 13rem
+            @media screen and ( max-width: 768px )
+                left: auto
+            @media screen and ( max-width: 450px )
+                left: 0
+
+    .prom__callback
+        width: 16.6rem
+        height: 100%
+        border-radius: 10px
+        padding: 2rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background: $orange
+        color: $white
+        @media screen and ( max-width: 450px )
+            width: 100%
+        .callback__text
+            font-size: 1rem
+        .prom__gratitude
+            font-size: 0.7rem
+
+.prom__box__fence
+    .prom__text
+        padding-bottom: 1.8rem
+.deal__price
+    display: inline-flex
+    flex-direction: column
+    border-radius: 0.16rem
+    width: 8.1rem
+    text-align: center
+    font-family: Cera Pro
+    padding: 0.6rem
+    position: relative
+    z-index: 5
+    align-items: center
+    @media screen and ( max-width: 375px )
+        height: 4.5rem
+        padding: 0.2rem
+        justify-content: center
+    &_amount
+        font-size: 1.8rem
+        font-weight: 700
+        font-style: normal
+        line-height: 2.3rem
+    &_text
+        font-size: 0.66rem
+        letter-spacing: -0.01em
+        line-height: 0.8rem
+    &__fs
+        @media screen and ( max-width: 500px )
+            width: 3.93rem
+            height: 4.6rem
+
+.prom__block__phone
+    width: 10rem
+    @media screen and ( max-width: 768px )
+        width: 50%
+    @media screen and ( max-width: 450px )
+        width: 100%
+.porm__application
+    margin-top: 4rem
+
+.name__company__link
+    position: absolute
+    bottom: 0
+    z-index: 100
+
+    font-size: 1.9rem
+    width: 17.6rem
+    height: 4.6rem
+    
+    display: block
+    line-height: 4.6rem
+    text-align: center
+    @media screen and ( max-width: 768px )
+        width: 260px
+        transform: translateY(50%)
+        margin: auto
+    @media screen and ( max-width: 640px )
+        left: 50%
+        margin-left: -130px
+    a
+        color: $orange
+        position: relative
+        z-index: 100
+        display: block
+    @media screen and ( max-width: 375px )
+        transform: translateY(35%)
+
+.logo__money
+    padding-left: 0.3rem
+    &_close
+        @media screen and ( max-width: 500px )
+            display: none

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>modal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+<body>
+            <!--MODAL-->
+    <div class="modal__box">
+
+        <div class="modal modal__small">
+            <div class="name__company name__company_pos">
+                ателье фасадов
+            </div>
+            <div class="modal__name">Оставьте заявку <br> и мы перезвоним!</div>
+            <form action="#" method="post">
+                <div class="modal__small__input">
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+                <div class="modal__small__input">
+                    <input type="tel" placeholder="Ваш номер телефона">
+                </div>
+                <div class="modal__btn">
+                    <input type="button" value="Отправить">
+                </div>
+            </form>
+        </div>
+
+        <div class="modal modal__small">
+            <div class="name__company name__company_pos">
+                ателье фасадов
+            </div>
+            <div class="modal__name modal__small__name">Мы перезвоним на указанный номер <br> телефона в течении часа!</div>
+            <div class="modal__small__text">
+                Благодарим Вас!
+            </div>
+        </div>
+
+        <div class="modal modal__calc">
+            <div class="name__company name__company_pos">
+                ателье фасадов
+            </div>
+            <div class="modal__name calc__name">
+                Калькулятор <br> расчета стоимости
+            </div>
+            <form action="">
+                <div class="calc__box">
+                    <div class="calc__content">
+                        <div class="calc__inner">
+                            <label class="calc__label calc__label_pos">
+                                Длина листа
+                                <input type="text" placeholder="Длина листа">
+                            </label>
+                            <label for="" class="calc__label calc__label_pos">
+                                Ширина
+                                <input type="text" placeholder="Ширина">
+                            </label>
+                            <label for="" class="calc__label">
+                                Количество листов
+                                <input type="tel" placeholder="Количество листов">
+                            </label>
+                        </div>
+                        <div class="calc__inner calc__inner__field">
+                            <div class="calc__lenght">
+                                Метраж — <b>800 м<sup>2</sup></b> 
+                            </div>
+                            <span class="color__orange">x</span>
+                            <div class="calc__price">Цена за м<sup>2</sup><b> — 497 ₽</b></div>
+                            <span class="color__orange">=</span>
+                            <div class="calc__lenght__total">
+                                <div class="calc__lenght__text">Общий метраж</div>
+                                <div class="calc__lenght__amount"><b>37,836 м2</b></div>
+                            </div>
+                            <div class="calc__price__total">
+                                <div class="calc__price__text">Сумма заказа</div>
+                                <div class="calc__price__amount"><b>25 584,7 ₽</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="calc__more">
+                        <input type="submit" value="+">
+                        <span>Добавить лист</span>  
+                    </div>
+
+                    <div class="modal__btn modal__btn_pos">
+                        <input type="button" value="Заказать">
+                    </div>
+                </div>
+                
+            </form>
+            
+        </div>
+
+    </div>
+</body>
+</html>
